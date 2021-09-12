@@ -1,0 +1,450 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+/** Essential Styles **/
+
+* {
+  font-family: "Fredoka One", Helvetica, Arial, sans-serif;
+  transition: all 0.5s ease-in-out;
+}
+
+*::selection {
+  background-color: aquamarine;
+}
+
+*:link,
+*:visited {
+  text-decoration: none;
+  transition: all 0.5;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/** Some classes to help **/
+
+.title {
+  font-size: 48px;
+}
+
+.subtitle {
+  font-size: 28px;
+}
+
+/** Scrollbar **/
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: darkgrey;
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(66, 66, 66, 0.932);
+  border-radius: 10%;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  box-shadow: inset 0 0 6px rgb(29, 29, 29);
+}
+
+
+
+/**** Base Styles ****/
+
+#langbtn > a,
+#langbtn:hover > a {
+  position: fixed;
+  display: block;
+  right: 0;
+  margin-top: 10px;
+  margin-right: 10px;
+  font-size: 2em;
+  z-index: 1200;
+  transition: all 0.5 ease-in-out;
+  text-shadow: 2px 2px 0px black;
+}
+
+#langbtn > a {
+  color: aquamarine;
+}
+
+#langbtn:hover > a, #langbtn:focus > a, #langbtn:active > a {
+  color: rgb(102, 192, 162);
+  transform: rotateZ(-360deg);
+}
+
+/** Landing **/
+#landing {
+  position: relative;
+  background: gray;
+  height: 660px;
+  top: 0;
+  background-image: url(../images/landing.jpg);
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  clip-path: polygon(0 0, 100% 0%, 100% 79%, 0% 100%);
+}
+
+#title,
+#subtitle {
+  color: orangered;
+  text-shadow: 2px 2px 0px maroon;
+}
+
+#title {
+  font-size: 62px;
+  padding-top: 10vw;
+}
+
+#subtitle {
+  padding-top: 10px;
+  font-size: 48px;
+}
+
+#examplemodal {
+  position: absolute;
+}
+
+#watchvideo,
+#watchvideo:hover {
+  font-size: 1.25em;
+  background: transparent;
+  border: 5px solid black;
+  border-radius: 2px;
+  color: white;
+  text-align: center;
+  position: absolute;
+  width: 300px;
+  padding: 20px;
+  margin-top: 5vw;
+  left: 50%;
+  margin-left: -150px;
+}
+
+#watchvideo:hover,
+#watchvideo:active {
+  border: 5px solid ghostwhite;
+  background-color: rgba(3, 3, 3, 0.2);
+  box-shadow: 2px 2px 8px white;
+  transform: translateY(-2.5px);
+}
+
+/** Nav Section **/
+
+#navSection {
+  background-image: url(../images/navbg.jpg);
+}
+
+#navcontainertop {
+  height: 1px;
+  color: gray;
+}
+
+#navcontainer {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 10px;
+  font-size: 1.5em;
+  overflow: auto !important;
+  background-color: white;
+  height: 70px;
+}
+
+
+.navbaritems {
+  text-shadow: 1px 1px 0px darkcyan;
+  position: -webkit-sticky;
+  position: sticky;
+  align-self: flex-start;
+}
+
+.nav-left-side:hover, .nav-left-side:active, .nav-left-side:focus {
+  transform: rotateZ(360deg);
+}
+
+.nav-right-side:hover, .nav-right-side:active, .nav-right-side:focus {
+  transform: rotateZ(-360deg);
+}
+
+.nav-center:hover, .nav-center:active, .nav-center:focus {
+  transform: rotateX(-360deg);
+}
+
+/** What? **/
+
+#what {
+  height: 900px;
+  margin-top: 2em;
+  padding-top: 11em;
+  clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
+  background-color: yellowgreen;
+}
+
+#whattitle {
+  text-shadow: 2px 2px 0px rgb(112, 150, 36);
+}
+
+#whatsubtitle {
+  text-shadow: 2px 2px 0px rgb(61, 82, 20);
+}
+
+#whattext {
+  font-size: 1.25rem;
+  margin-top: 50px;
+  width: 40vw;
+}
+
+#whatcontainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+/** Why? **/
+
+#whytitle {
+  text-shadow: 2px 2px 0px lightgray;
+}
+
+#whysubtitle {
+  text-shadow: 2px 2px 0px gray;
+}
+
+#whycontainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+#whytext {
+  font-size: 1.25rem;
+  width: 40vw;
+}
+
+#whyimg {
+  box-shadow: 0 0 8px 8px white inset;
+}
+
+/** How? **/
+
+#how {
+  height: 600px;
+  margin-top: 2em;
+  padding-top: 6em;
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+  background-color: mediumslateblue;
+  border-bottom: 5px solid black;
+}
+
+#howtitle {
+  text-shadow: 2px 2px 0px rgb(109, 84, 158);
+}
+
+#howsubtitle {
+  text-shadow: 2px 2px 0px rgb(62, 52, 121);
+}
+
+#howcontainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+#howtext {
+  font-size: 1.25rem;
+  margin-top: 50px;
+  width: 70vw;
+}
+
+/** Play! **/
+
+#play {
+  height: 650px;
+  margin-top: 2em;
+  padding-top: 6em;
+  background-color: goldenrod;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+#playtitle {
+  text-shadow: 2px 2px 0px rgb(167, 126, 23);
+}
+
+#playsubtitle {
+  text-shadow: 2px 2px 0px rgb(100, 76, 13);
+}
+
+/** Who? **/
+
+#who {
+  background-color: crimson;
+  height: 800px;
+}
+
+#whocontainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+#whotitle {
+  text-shadow: 2px 2px 0px rgb(146, 11, 38);
+  padding-top: 5vw;
+}
+
+#whosubtitle {
+  text-shadow: 2px 2px 0px rgb(110, 8, 28);
+}
+
+#zhaiicon,
+#shubhamicon {
+  margin-top: 60px;
+}
+
+#zhaiicon:hover,
+#shubhamicon:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#zhainame,
+#shubhamname {
+  text-shadow: 2px 2px 0px darkred;
+  margin-top: 30px;
+}
+
+#zhaiicon,
+#shubhamicon {
+  border-radius: 50%;
+}
+
+#whotextcontainer {
+  margin-top: 120px;
+  width: 30vw;
+}
+
+/** Footer **/
+
+footer {
+  position: relative;
+  margin-top: -50px;
+  background-color: rgb(119, 174, 255);
+  z-index: 5;
+  height: 100px;
+  clip-path: ellipse(69% 100% at 44.11% 100%);
+}
+
+footer div {
+  padding-top: 3vw;
+}
+
+/******** Media Queries ********/
+
+/** XSmall Devices **/
+
+@media (max-width: 575.98px) {
+  /** What? **/
+
+  #what {
+    height: 2200px;
+  }
+  #whattitle {
+    padding-top: 350px;
+  }
+  div iframe {
+    width: 320px;
+  }
+  #whattext {
+    width: 60vw;
+  }
+
+  /** Why? **/
+
+  #whytext {
+    width: 60vw;
+  }
+
+  /** How? **/
+
+  #how {
+    height: 1050px;
+  }
+
+  /** Who? **/
+
+  #who {
+    height: 1500px;
+  }
+  #whotextcontainer {
+    width: 60vw;
+  }
+}
+
+/** Custom Breakpoint **/
+
+@media (min-width: 576px) and (max-width: 660.98px) {
+  /** What? **/
+
+  #what {
+    height: 2050px;
+  }
+
+  #whattitle {
+    padding-top: 250px;
+  }
+
+  /** Who? **/
+
+  #who {
+    height: 1400px;
+    text-align: center;
+  }
+  #whotextcontainer {
+    width: 70vw;
+  }
+}
+
+/** Small Devices **/
+@media (min-width: 661px) and (max-width: 767.98px) {
+  /** What? **/
+
+  #what {
+    height: 1200px;
+  }
+
+  /** Who? **/
+
+  #who {
+    height: 1400px;
+    text-align: center;
+  }
+  #whotextcontainer {
+    width: 70vw;
+  }
+}
+
+/** Medium Devices **/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #what {
+    height: 1100px;
+  }
+}
+
+/** Large Devices **/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/** XL Devices **/
+@media (min-width: 1200px) {
+}
