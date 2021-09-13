@@ -52,8 +52,6 @@
   box-shadow: inset 0 0 6px rgb(29, 29, 29);
 }
 
-
-
 /**** Base Styles ****/
 
 #langbtn > a,
@@ -73,7 +71,9 @@
   color: aquamarine;
 }
 
-#langbtn:hover > a, #langbtn:focus > a, #langbtn:active > a {
+#langbtn:hover > a,
+#langbtn:focus > a,
+#langbtn:active > a {
   color: rgb(102, 192, 162);
   transform: rotateZ(-360deg);
 }
@@ -157,7 +157,6 @@
   height: 70px;
 }
 
-
 .navbaritems {
   text-shadow: 1px 1px 0px darkcyan;
   position: -webkit-sticky;
@@ -165,15 +164,21 @@
   align-self: flex-start;
 }
 
-.nav-left-side:hover, .nav-left-side:active, .nav-left-side:focus {
+.nav-left-side:hover,
+.nav-left-side:active,
+.nav-left-side:focus {
   transform: rotateZ(360deg);
 }
 
-.nav-right-side:hover, .nav-right-side:active, .nav-right-side:focus {
+.nav-right-side:hover,
+.nav-right-side:active,
+.nav-right-side:focus {
   transform: rotateZ(-360deg);
 }
 
-.nav-center:hover, .nav-center:active, .nav-center:focus {
+.nav-center:hover,
+.nav-center:active,
+.nav-center:focus {
   transform: rotateX(-360deg);
 }
 
@@ -354,10 +359,25 @@ footer div {
 /** XSmall Devices **/
 
 @media (max-width: 575.98px) {
+  /** Nav **/
+
+  nav {
+    height: 5vw;
+  }
+
+  #langbtn > a {
+    top: 10px;
+    position: absolute;
+  }
+
+  .navbaritems {
+    font-size: 0.75em;
+  }
+
   /** What? **/
 
   #what {
-    height: 2200px;
+    height: 2400px;
   }
   #whattitle {
     padding-top: 350px;
@@ -436,8 +456,16 @@ footer div {
 
 /** Medium Devices **/
 @media (min-width: 768px) and (max-width: 991.98px) {
+  /** What? **/
+
   #what {
     height: 1100px;
+  }
+
+  /** How? **/
+
+  #how {
+    height: 700px;
   }
 }
 

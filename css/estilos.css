@@ -71,7 +71,9 @@
   color: aquamarine;
 }
 
-#langbtn:hover > a, #langbtn:focus > a, #langbtn:active > a {
+#langbtn:hover > a,
+#langbtn:focus > a,
+#langbtn:active > a {
   color: rgb(102, 192, 162);
   transform: rotateZ(-360deg);
 }
@@ -155,7 +157,6 @@
   height: 70px;
 }
 
-
 .navbaritems {
   text-shadow: 1px 1px 0px darkcyan;
   position: -webkit-sticky;
@@ -163,8 +164,9 @@
   align-self: flex-start;
 }
 
-
-.nav-center:hover, .nav-center:active, .nav-center:focus {
+.nav-center:hover,
+.nav-center:active,
+.nav-center:focus {
   transform: rotateX(-360deg);
 }
 
@@ -189,7 +191,7 @@
 #whattext {
   font-size: 1.25rem;
   margin-top: 50px;
-  width: 40vw;
+  width: 50vw;
 }
 
 #whatcontainer {
@@ -345,10 +347,29 @@ footer div {
 /** XSmall Devices **/
 
 @media (max-width: 575.98px) {
+  /** Landing **/
+  #landing {
+    height: 900px;
+  }
+  /** Nav **/
+
+  nav {
+    height: 5vw;
+  }
+
+  #langbtn > a {
+    top: 10px;
+    position: absolute;
+  }
+
+  .navbaritems {
+    font-size: 0.75em;
+  }
+
   /** What? **/
 
   #what {
-    height: 2200px;
+    height: 2700px;
   }
   #whattitle {
     padding-top: 350px;
@@ -369,7 +390,7 @@ footer div {
   /** How? **/
 
   #how {
-    height: 1050px;
+    height: 1250px;
   }
 
   /** Who? **/
@@ -411,7 +432,11 @@ footer div {
   /** What? **/
 
   #what {
-    height: 1200px;
+    height: 1725px;
+  }
+
+  #whattitle {
+    padding-top: 10vw;
   }
 
   /** Who? **/
@@ -423,12 +448,26 @@ footer div {
   #whotextcontainer {
     width: 70vw;
   }
+
+  /** How? **/
+
+  #how {
+    height: 800px;
+  }
 }
 
 /** Medium Devices **/
 @media (min-width: 768px) and (max-width: 991.98px) {
+  /** What? **/
+
   #what {
     height: 1100px;
+  }
+
+  /** How? **/
+
+  #how {
+    height: 775px;
   }
 }
 
