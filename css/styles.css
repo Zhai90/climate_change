@@ -313,23 +313,23 @@
 }
 
 #zhaiicon,
-#shubhamicon {
+#greenfireicon {
   margin-top: 60px;
 }
 
 #zhaiicon:hover,
-#shubhamicon:hover {
+#greenfireicon:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #zhainame,
-#shubhamname {
+#greenfirename {
   text-shadow: 2px 2px 0px darkred;
   margin-top: 30px;
 }
 
 #zhaiicon,
-#shubhamicon {
+#greenfireicon {
   border-radius: 50%;
 }
 
