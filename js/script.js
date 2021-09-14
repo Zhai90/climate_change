@@ -11,7 +11,7 @@ $(window).on('load', function() {
   $('#welcomemodal').modal('show');
 });
 
-document.getElementById("modalstop").addEventListener("click",    function(evt){
+document.getElementById("modalstop").addEventListener("click", function(evt){
   var video = document.getElementsByClassName("ytvideo");
   for (var i=0; i<video.length; i++) {
      video.item(i).contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
