@@ -270,30 +270,12 @@
   width: 70vw;
 }
 
-/** Play! **/
-
-#play {
-  height: 650px;
-  margin-top: 2em;
-  padding-top: 6em;
-  background-color: goldenrod;
-  border-top: 5px solid black;
-  border-bottom: 5px solid black;
-}
-
-#playtitle {
-  text-shadow: 2px 2px 0px rgb(167, 126, 23);
-}
-
-#playsubtitle {
-  text-shadow: 2px 2px 0px rgb(100, 76, 13);
-}
-
 /** Who? **/
 
 #who {
   background-color: crimson;
-  height: 800px;
+  height: 1000px;
+  text-align: center;
 }
 
 #whocontainer {
@@ -312,30 +294,39 @@
   text-shadow: 2px 2px 0px rgb(110, 8, 28);
 }
 
-#zhaiicon,
-#greenfireicon {
+#zhaiicon {
   margin-top: 60px;
 }
 
-#zhaiicon:hover,
-#greenfireicon:hover {
+#zhaiicon:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#zhainame,
-#greenfirename {
+#zhainame {
   text-shadow: 2px 2px 0px darkred;
   margin-top: 30px;
 }
 
-#zhaiicon,
-#greenfireicon {
+#zhaiicon {
   border-radius: 50%;
 }
 
 #whotextcontainer {
   margin-top: 120px;
   width: 30vw;
+  text-align: center;
+}
+
+#whotextcontainer2 {
+  margin: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+#whotext2 {
+  text-align: center;
+  width: 500px;
 }
 
 /** Footer **/
@@ -421,6 +412,12 @@ footer div {
 
   #whattitle {
     padding-top: 250px;
+  }
+
+  /** How? **/
+
+  #how {
+    height: 800px;
   }
 
   /** Who? **/
